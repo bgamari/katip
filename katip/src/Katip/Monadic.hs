@@ -117,7 +117,7 @@ liftPayload = LogContexts . Seq.singleton . AnyLogContext
 
 
 -------------------------------------------------------------------------------
--- | A monadic context that has an inherant way to get logging
+-- | A monadic context that has an inherent way to get logging
 -- context and namespace. Examples include a web application monad or
 -- database monad.
 class Katip m => KatipContext m where
