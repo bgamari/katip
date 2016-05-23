@@ -48,7 +48,9 @@ import qualified Data.Text                    as T
 import qualified Data.Text.Lazy.Builder       as B
 import           Data.Time
 import           GHC.Generics                 hiding (to)
-#if MIN_VERSION_base(4, 8, 0)
+#if MIN_VERSION_base(4, 9, 0)
+import           GHC.Stack
+#elif MIN_VERSION_base(4, 8, 0)
 import           GHC.SrcLoc
 import           GHC.Stack
 #endif
